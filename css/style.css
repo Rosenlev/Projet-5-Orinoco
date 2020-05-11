@@ -1,10 +1,3 @@
-/* =================================
-------------------------------------
-  The Plaza - eCommerce Template
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
 
 /*----------------------------------------*/
 /* Template default CSS
@@ -174,69 +167,6 @@ ol {
 	color: #fff;
 }
 
-/* Preloder */
-
-#preloder {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 999999;
-	background: #fff;
-}
-
-.loader {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -13px;
-	margin-left: -13px;
-	border-radius: 60px;
-	animation: loader 0.8s linear infinite;
-	-webkit-animation: loader 0.8s linear infinite;
-}
-
-@keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
-
-@-webkit-keyframes loader {
-	0% {
-		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-	50% {
-		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
-		border-left-color: transparent;
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
-		border-left-color: transparent;
-	}
-}
 
 /*------------------
   Header section
@@ -621,6 +551,7 @@ ol {
   Product section
 ---------------------*/
 
+
 .product-section .container {
 	margin-bottom: -90px;
 }
@@ -664,6 +595,8 @@ ol {
 
 .product-item {
 	margin-bottom: 95px;
+	display:flex;
+	justify-content: space-evenly;
 }
 
 .product-item figure {
@@ -674,11 +607,21 @@ ol {
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 	position: relative;
+	max-width: 400px;
 }
 
-.product-item figure img {
+
+section img {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section img {
 	min-width: 100%;
 }
+
 
 .product-item figure:after {
 	position: absolute;
@@ -691,23 +634,6 @@ ol {
 	border: 2px solid #ebebeb;
 }
 
-.product-item .bache {
-	position: absolute;
-	min-width: 59px;
-	height: 59px;
-	right: 0;
-	top: 0;
-	color: #fff;
-	font-size: 14px;
-	padding: 20px 10px 0;
-	text-align: center;
-	background: #414141;
-	z-index: 3;
-}
-
-.product-item .bache.sale {
-	background: #fd0018;
-}
 
 .product-item .pi-meta {
 	position: absolute;
@@ -783,56 +709,6 @@ ol {
 	transform: translateY(0%);
 }
 
-/*------------------
-  Blog section
----------------------*/
-
-.blog-section {
-	background: #f2f4f9;
-}
-
-.blog-section .bgs-title {
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 85px;
-}
-
-.blog-item {
-	overflow: hidden;
-	margin-bottom: 33px;
-}
-
-.blog-item:last-child {
-	margin-bottom: 0;
-}
-
-.blog-item .bi-thumb {
-	float: left;
-	max-width: 166px;
-}
-
-.blog-item .bi-content {
-	padding-left: 196px;
-}
-
-.blog-item .bi-content h5 {
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 10px;
-}
-
-.blog-item .bi-content .bi-meta {
-	font-size: 12px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #bca480;
-	margin-bottom: 30px;
-}
-
-.blog-item .bi-content .readmore {
-	font-size: 14px;
-	color: #949494;
-}
 
 /*------------------
   Footer Top section
