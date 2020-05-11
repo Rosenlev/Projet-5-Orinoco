@@ -440,7 +440,7 @@ ol {
 	opacity: 0;
 }
 
-.intro-slider .intro-item .product-info {
+.intro-slider .intro-item section {
 	opacity: 0;
 	padding-top: 75px;
 	text-align: center;
@@ -449,13 +449,13 @@ ol {
 	transition: all 0.4s;
 }
 
-.intro-slider .intro-item .product-info h5 {
+.intro-slider .intro-item section h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 5px;
 }
 
-.intro-slider .intro-item .product-info p {
+.intro-slider .intro-item section p {
 	font-size: 24px;
 	color: #8d8d8d;
 }
@@ -472,7 +472,7 @@ ol {
 	opacity: 1;
 }
 
-.intro-slider .active .intro-item .product-info {
+.intro-slider .active .intro-item section {
 	opacity: 1;
 }
 
@@ -552,164 +552,54 @@ ol {
 ---------------------*/
 
 
-.product-section .container {
-	margin-bottom: -90px;
-}
-
-.product-filter {
-	list-style: none;
-	text-align: center;
-	margin-bottom: 90px;
-}
-
-.product-filter li {
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 700;
-	margin-right: 70px;
-	position: relative;
-	cursor: pointer;
-}
-
-.product-filter li:last-child {
-	margin-right: 0;
-}
-
-.product-filter li:last-child:after {
-	display: none;
-}
-
-.product-filter li:after {
-	position: absolute;
-	content: "";
-	height: 25px;
-	width: 1px;
-	right: -34px;
-	top: 3px;
-	background: #414141;
-	-webkit-transform: skewX(-20deg);
-	-ms-transform: skewX(-20deg);
-	transform: skewX(-20deg);
-}
-
-.product-item {
+#product-item {
+	margin-top: 95px;
 	margin-bottom: 95px;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
-.product-item figure {
-	margin-bottom: 45px;
-	position: relative;
-	overflow: hidden;
-	-webkit-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
-	position: relative;
-	max-width: 400px;
-}
-
-
+section
+{}
 section img {
-    display: block;
-    width: 400px;
+	height: 150px;
     margin-left: auto;
-    margin-right: auto;
-}
-
-.section img {
-	min-width: 100%;
+	margin-right: auto;
 }
 
 
-.product-item figure:after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	border: 2px solid #ebebeb;
-}
-
-
-.product-item .pi-meta {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	z-index: 1;
-	background: #414141;
-	padding: 10px 0;
-	opacity: 0;
-	-webkit-transform: translateY(110%);
-	-ms-transform: translateY(110%);
-	transform: translateY(110%);
-	-webkit-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
-}
-
-.product-item .pi-meta p {
-	margin-bottom: 0;
-	color: #fff;
-	font-size: 12px;
-}
-
-.product-item .pi-meta img {
-	min-width: auto;
-}
-
-.product-item .pi-meta .pi-m-left {
-	float: left;
-	display: inline-block;
+#product-item section {
 	text-align: center;
-	padding: 0 35px;
+	width: 500px;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border: solid black 2px;
 }
 
-.product-item .pi-meta .pi-m-right {
-	float: right;
-	display: inline-block;
-	text-align: center;
-	padding: 0 35px;
-}
-
-.product-item .product-info {
-	text-align: center;
-}
-
-.product-item .product-info h6 {
+#product-item section h6 {
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-bottom: 5px;
 }
 
-.product-item .product-info p {
+#product-item section p {
 	font-size: 24px;
 	font-weight: 700;
 	color: #414141;
 }
 
-.product-item .product-info p span {
+#product-item section a {
+	color: #414141;
+}
+
+
+#product-item section p span {
 	font-size: 14px;
 	font-weight: 400;
 	color: #000;
 }
-
-.product-item:hover figure:after {
-	opacity: 1;
-}
-
-.product-item:hover .pi-meta {
-	opacity: 1;
-	-webkit-transform: translateY(0%);
-	-ms-transform: translateY(0%);
-	transform: translateY(0%);
-}
-
-
 /*------------------
   Footer Top section
 ---------------------*/
@@ -1719,10 +1609,10 @@ section img {
 	.hs-item .hs-content h2 {
 		font-size: 60px;
 	}
-	.product-item .pi-meta .pi-m-left {
+	#product-item .pi-meta .pi-m-left {
 		padding: 0 20px;
 	}
-	.product-item .pi-meta .pi-m-right {
+	#product-item .pi-meta .pi-m-right {
 		padding: 0 20px;
 	}
 	.cata-top-pic {
