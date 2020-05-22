@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<title>Orinoco - Panier</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Orinoco, plateforme de vente d'ours en peluches faits à la main">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" />
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
 
 	<!--[if lt IE 9]>
@@ -25,126 +25,112 @@
 	<![endif]-->
 
 </head>
+
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-	
+
 	<!-- Header section -->
 	<header class="header-section header-normal">
 		<div class="container-fluid">
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="img/logo.png" alt="logo">
-			</div>
-			<!-- responsive -->
-			<div class="nav-switch">
-				<i class="fa fa-bars"></i>
+				<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 			</div>
 			<div class="header-right">
-				<a href="cart.html" class="card-bag"><img src="img/icons/bag.png" alt=""><span>2</span></a>
+				<a href="cart.html" class="card-bag"><img src="img/icons/bag.png" alt=""></a>
 			</div>
 			<!-- site menu -->
 			<ul class="main-menu">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="homemadeteddies@orinoco.com">Contact</a></li>
 			</ul>
 		</div>
 	</header>
 	<!-- Header section end -->
 
 	<!-- Page -->
-	<div class="page-area cart-page spad">
-		<div class="container">
-			<div class="cart-table">
-				<table>
-					<thead>
-						<tr>
-							<th class="product-th">Produit</th>
-							<th>Prix</th>
-							<th class="total-th">Total</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="product-col">
-								
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="row cart-buttons">
-				<div class="col-lg-5 col-md-5">
-					<a href= index.html><div class="site-btn btn-continue">Continuer vos achats</div></a>
-				</div>
-			</div>
+	<div class="page-area cart-page spad"></div>
+	<div class="container">
+		<div class="cart-table">
+			<table>
+				<thead>
+					<tr>
+						<th class="product-th">Votre panier</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="product-col">
+							<section id="cart">
+								<h3 id="cart-total"></h3>
+							</section>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<div class="card-warp">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						
-					</div>
-					
-				</div>
+		<div class="row cart-buttons">
+			<div class="col-lg-5 col-md-5">
+				<a href=index.html>
+					<div class="site-btn btn-continue">Continuer vos achats</div>
+				</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="page-area cart-page spad">
-		<div class="container">
-			<form class="checkout-form">
-				<div class="row">
-					<div class="col-lg-6">
-						<h4 class="checkout-title">Commande</h4>
-						<div class="row">
-							<div class="col-md-6">
-								<input type="text" placeholder="Prénom *">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Nom *">
-							</div>
-							<div class="col-md-12">
-								<input type="text" placeholder="Adresse *">
-								<input type="text" placeholder="Ville *">
-								
-								<input type="text" placeholder="Numéro de téléphone*">
-								<input type="email" placeholder="Adresse email *">
-								
-								</div>
-							</div>
+<!-- Checkout form -->
+	<div class="container">
+		<form class="checkout-form">
+			<div class="row">
+				<div class="col-lg-6">
+					<h4 class="checkout-title">Commande</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<label for="firstName">Prénom : </label>
+							<input type="text" id="firstName" name="firstName">
+							<p id="firstNameErrorMessage" class="form-error"></p>
+						</div>
+						<div class="col-md-6">
+							<label for="lastName">Nom : </label>
+							<input type="text" id="lastName" name="lastName">
+							<p id="lastNameErrorMessage" class="form-error"></p>
+						</div>
+						<div class="col-md-12">
+							<label for="address">Adresse : </label>
+							<input type="text" id="address" name="address">
+							<p id="addressErrorMessage" class="form-error"></p>
+
+							<label for="city">Ville : </label>
+							<input type="text" id="city" name="city">
+							<p id="cityErrorMessage" class="form-error"></p>
+
+							<label for="email">Email : </label>
+							<input type="email" id="email" name="email">
+							<p id="emailErrorMessage" class="form-error"></p>
+
+
+							<input type="submit" id="site-btn" value="Valider">
+
 						</div>
 					</div>
-				
 				</div>
-			</form>
-		</div>
-	</div>
-
-	<div class="offset-lg-2 col-lg-6">
-		<div class="cart-total-details">
-			<h4>Cart total</h4>
-			<p>Final Info</p>
-			<ul class="cart-total-card">
-				<li>Subtotal<span></span></li>
-				<li>Shipping<span>Free</span></li>
-				<li class="total">Total<span></span></li>
-			</ul>
-			<a class="site-btn btn-full" href="checkout.html">Proceed to checkout</a>
-		</div>
+			</div>
+	</form>
 	</div>
 	<!-- Page end -->
 
 
-	<!-- Footer top section -->	
+	<!-- Footer top section -->
 	<section class="footer-top-section home-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-8 col-sm-12">
 					<div class="footer-widget about-widget">
 						<img src="img/logo.png" class="footer-logo" alt="">
-						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
+						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus
+							urna, id dapibus erat iaculis ut. Integer ac sem.</p>
 						<div class="cards">
 							<img src="img/cards/5.png" alt="">
 							<img src="img/cards/4.png" alt="">
@@ -156,7 +142,7 @@
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6">
 					<div class="footer-widget">
-						
+
 						<h6 class="fw-title">Liens utiles</h6>
 						<ul>
 							<li><a href="#">Partnenaires</a></li>
@@ -206,7 +192,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Footer top section end -->	
+	<!-- Footer top section end -->
 
 
 	<!--====== Javascripts & Jquery ======-->
@@ -217,5 +203,9 @@
 	<script src="js/sly.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/main.js"></script>
-    </body>
+	<script src="cart.js"></script>
+	<script src="form.js"></script>
+
+</body>
+
 </html>
