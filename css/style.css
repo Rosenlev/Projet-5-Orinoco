@@ -1,8 +1,4 @@
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
 	height: 100%;
@@ -14,16 +10,14 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+ {
 	margin: 0;
 	font-weight: 500;
 	color: #414141;
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 50px;
 }
 
 h2 {
@@ -34,17 +28,6 @@ h3 {
 	font-size: 30px;
 }
 
-h4 {
-	font-size: 24px;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
-	font-size: 16px;
-}
 
 p {
 	font-size: 14px;
@@ -95,43 +78,9 @@ ol {
 	font-weight: 500;
 }
 
-.set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
+/*Common elements*/
 
-.spad {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6,
-.text-white p,
-.text-white span,
-.text-white li,
-.text-white a {
-	color: #fff;
-}
-
-.rating i {
-	color: #fbb710;
-}
-
-.rating .is-fade {
-	color: #e0e3e4;
-}
-
-/*---------------------
-  Commom elements
------------------------*/
-
-/* buttons */
+/* Buttons */
 
 .site-btn {
 	display: inline-block;
@@ -190,8 +139,7 @@ ol {
 	background: #f0f9ff;
 	background: -webkit-gradient(linear, left top, right top, from(#f0f9ff), color-stop(0%, #aa7ad0), to(#d07acd));
 	background: -o-linear-gradient(left, #f0f9ff 0%, #aa7ad0 0%, #d07acd 100%);
-	background: linear-gradient(to right, #f0f9ff 0%, #aa7ad0 0%, #d07acd 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#d07acd', GradientType=1);
+	background: linear-gradient(to right, #f0f9ff 0%, #aa7ad0 0%, #d07acd 100%);;
 }
 
 .site-logo {
@@ -272,51 +220,6 @@ ol {
 	overflow: hidden;
 }
 
-.hero-slider {
-	height: 100%;
-	overflow: hidden;
-}
-
-.owl-item img
-{
-	display: none;
-}
-
-.hero-slider .owl-nav .owl-prev {
-	float: left;
-	width: 40px;
-}
-
-.hero-slider .owl-nav .owl-prev:hover,
-.hero-slider .owl-nav .owl-next:hover {
-	color: #fff;
-}
-
-.hero-slider .owl-nav .owl-next {
-	float: right;
-	width: 40px;
-	text-align: right;
-}
-
-.hero-slider .owl-dots {
-	position: absolute;
-	right: 46px;
-	bottom: 55px;
-}
-
-.hero-slider .owl-dots .owl-dot {
-	width: 7px;
-	height: 7px;
-	background: #414141;
-	display: inline-block;
-	border-radius: 20px;
-	margin-left: 13px;
-}
-
-.hero-slider .owl-dots .owl-dot.active {
-	background: #fff;
-}
-
 .hs-item {
 	height: 100%;
 	overflow: hidden;
@@ -381,9 +284,7 @@ ol {
 	-webkit-transition: all 0.5s ease 0.4s;
 }
 
-.owl-item.active .hs-item .hs-content h2,
-.owl-item.active .hs-item .hs-content .price,
-.owl-item.active .hs-item .hs-content .site-btn {
+.owl-item.active .hs-item .hs-content h2 {
 	top: 0;
 	opacity: 1;
 }
@@ -636,47 +537,12 @@ ol {
 }
 
 /*------------------
-  Footer section
----------------------*/
-
-.footer-section {
-	background: #222222;
-	padding: 12px;
-}
-
-.footer-section .copyright {
-	color: #505050;
-	margin-bottom: 0;
-	line-height: normal;
-}
-
-/*------------------
   Product page
 ---------------------*/
 
 .product-page {
 	padding-top: 100px;
 	padding-bottom: 5px;
-}
-
-.product-thumbs {
-	position: absolute;
-	height: 500px;
-	width: 157px;
-	right: 100%;
-	top: 0;
-	overflow-y: auto;
-}
-
-.product-thumbs .pt {
-	width: 157px;
-	display: inline-block;
-	margin-bottom: 16px;
-	cursor: pointer;
-}
-
-.product-thumbs .pt:last-child {
-	margin-bottom: 0;
 }
 
 .product-content{
