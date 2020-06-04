@@ -8,7 +8,7 @@ body {
 
 h1,
 h2,
-h3,{
+h3{
 	margin: 0;
 	font-weight: 500;
 	color: #414141;
@@ -571,9 +571,11 @@ margin-left: 120px;
 	margin-bottom: 15px;
 }
 
-/*------------------
-  Responsive
----------------------*/
+/*Checkout*/
+#confirmation{
+ text-align: center;
+}
+/*Responsive*/
 
 
 /* Tablet :768px. */
@@ -766,4 +768,5 @@ width: 400px;
 .btn-continue{
 	margin-left: 400px;
 }
+
 }
